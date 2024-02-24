@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+	.wrapper {
+		max-width: 1200px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.bg-image {
+		background-image: url(./images/evecandle-heroimage.jpg);
+		background-size: 20%;
+		background-position: center;
+	}
+}
