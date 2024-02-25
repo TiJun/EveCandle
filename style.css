@@ -7,9 +7,17 @@
 		width: 100%;
 		margin: 0 auto;
 	}
-	.bg-image {
-		background-image: url(./images/evecandle-heroimage.jpg);
-		background-size: 20%;
-		background-position: center;
+	.transform-image {
+		transform: translate(-50%, -50%);
 	}
+	.hero {
+		background-image: url(./images/evecandle-heroimage.jpg);
+	}
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
