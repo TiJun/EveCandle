@@ -8,7 +8,11 @@ module.exports = {
 			large: "992px",
 			xl: "1200px",
 		},
-		extend: {},
+		extend: {
+			colors: {
+				background: "#edf2fb",
+			},
+		},
 	},
 	plugins: [],
 };
