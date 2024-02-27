@@ -3,21 +3,33 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="./images/evecandle-favicon.jpg" />
+  <link rel="icon" type="image/svg+xml" href="./src/images/home-icon.jpg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EveCandle - Handmade Candles</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./src/hamburger.css">
 </head>
 
-<body class="bg-background font-roboto ">
-  <nav class="hidden medium:block sticky top-0 bg-background z-10">
+<body class="bg-background font-roboto">
+  <nav class="xl:hidden bg-background z-10 sticky top-0 flex justify-between">
+    <button class="hamburger hamburger--emphatic" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <img src="./src/images/home-icon.png" class="rounded size-[6em]" alt="">
+    <button>
+      <img class="p-[1em]" src="./src/icons/shopping-cart (1).svg" alt="basket icon">
+    </button>
+  </nav>
+  <nav class="hidden xl:block sticky top-0 bg-background z-10">
     <ul class="a> uppercase a> font-bold py-[1em] flex justify-evenly top-0">
       <li><a class="hover:text-[#4F6F52] transition-[color] relative px-[2em] py-[1em] link-top" href="#about-shop">O
           sklepie</a></li>
       <li><a class="hover:text-[#4F6F52] transition-[color] relative link-top px-[2em] py-[1em]" href="">Oferta</a></li>
       <li><a class="px-[2em] py-[1em]" href="#"><img
             class="z-10 size-[12em] absolute top-[100%] right-[50%] left-[50%] transform-image bg-background rounded-full"
-            src="./images/home-icon.png" alt="evecandle logo"></a>
+            src="./src/images/home-icon.png" alt="evecandle logo"></a>
       </li>
       <li><a class="hover:text-[#4F6F52] transition-[color] relative link-top px-[2em] py-[1em]" href="">Kontakt</a>
       </li>
@@ -32,7 +44,7 @@
     </div>
   </header>
   <main>
-    <section id="about-shop">
+    <section class="h-[200vh]" id="about-shop">
       <h1 class="uppercase text-center py-[1em] text-[2.5em] font-bold ">o sklepie</h1>
     </section>
   </main>
