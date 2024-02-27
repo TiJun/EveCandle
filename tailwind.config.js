@@ -10,9 +10,13 @@ module.exports = {
 		},
 		extend: {
 			colors: {
-				background: "#d6eadf",
+				background: "#eeddd3",
+				text: "#6e78ff",
 			},
 		},
+		fontFamily: {
+			roboto: ['Roboto', 'sans-serif']
+		}
 	},
 	plugins: [],
 };
