@@ -11,13 +11,24 @@
 </head>
 
 <body class="bg-background font-roboto">
+  <div id="mobile-nav"
+    class="medium-hidden bg-[#e0c0ad] flex flex-col justify-center items-end a> uppercase a> font-bold z-10 fixed h-[100vh] overflow-hidden translate-x-[-100%] transition-[transform]">
+    <img src="./src/images/home-icon.png" class="size-[10em] mt-[5em] mx-auto" alt="">
+    <ul class="flex flex-col text-[1.2em] justify-around mr-[1em] text-center h-[100vh] mb-10">
+      <li class="w-[150%] bg-[#4f6f52] h-[2px] -translate-x-4"></li>
+      <li id="link"><a class="p-[1em]" href="#about-shop">o sklepie</a></li>
+      <li class="w-[150%] bg-[#4f6f52] h-[2px] -translate-x-4"></li>
+      <li id="link"><a class="p-[1em]" class="my-[2em]" href="">oferta</a></li>
+      <li class="w-[150%] bg-[#4f6f52] h-[2px] -translate-x-4"></li>
+      <li id="link"><a class="p-[1em]" href="">kontakt</a></li>
+    </ul>
+  </div>
   <nav class="xl:hidden bg-background z-10 sticky top-0 flex justify-between">
-    <button class="hamburger hamburger--emphatic" type="button">
+    <button id="burger" class="z-50 hamburger hamburger--emphatic" type="button">
       <span class="hamburger-box">
         <span class="hamburger-inner"></span>
       </span>
     </button>
-    <img src="./src/images/home-icon.png" class="rounded size-[6em]" alt="">
     <button>
       <img class="p-[1em]" src="./src/icons/shopping-cart (1).svg" alt="basket icon">
     </button>
@@ -48,6 +59,7 @@
       <h1 class="uppercase text-center py-[1em] text-[2.5em] font-bold ">o sklepie</h1>
     </section>
   </main>
+  <script src="./src/script.js"></script>
 </body>
 
 </html>
