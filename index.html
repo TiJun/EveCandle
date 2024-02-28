@@ -35,20 +35,25 @@
   </nav>
   <nav class="hidden xl:block sticky top-0 bg-background z-10">
     <ul class="a> uppercase a> font-bold py-[1em] flex justify-evenly top-0">
-      <li id="desktop-nav"><a class="hover:text-[#4F6F52] transition-[color] relative px-[2em] py-[1em] link-top"
+      <li id="desktop-nav"><a
+          class="tracking-wider hover:text-[#4F6F52] transition-[color] relative px-[2em] py-[1em] link-top"
           href="#about-shop">O
           sklepie</a></li>
-      <li id="desktop-nav"><a class="hover:text-[#4F6F52] transition-[color] relative link-top px-[2em] py-[1em]"
-          href="">Oferta</a></li>
+      <li id="desktop-nav"><a
+          class="tracking-wider hover:text-[#4F6F52] transition-[color] relative link-top px-[2em] py-[1em]"
+          href="#offers">Oferta</a></li>
       <li><a class="px-[2em] py-[1em]" href="#"><img
             class="z-10 size-[12em] absolute top-[100%] right-[50%] left-[50%] transform-image bg-background rounded-full"
             src="./src/images/home-icon.png" alt="evecandle logo"></a>
       </li>
-      <li id="desktop-nav"><a class="hover:text-[#4F6F52] transition-[color] relative link-top px-[2em] py-[1em]"
+      <li id="desktop-nav"><a
+          class="tracking-wider hover:text-[#4F6F52] transition-[color] relative link-top px-[2em] py-[1em]"
           href="">Kontakt</a>
       </li>
-      <li id="desktop-nav"><a class="hover:text-[#4F6F52] transition-[color] relative link-top px-[2em] py-[1em]"
-          href="">Sklep</a></li>
+      <li id="desktop-nav"><a
+          class="tracking-wider hover:text-[#4F6F52] ease-in-out transition-[color] relative px-[2em] py-[1em] cta"
+          href="">Sklep</a>
+      </li>
     </ul>
   </nav>
   <header class="h-[50vh]">
@@ -63,21 +68,57 @@
       <h1 class="uppercase text-center py-[1em] medium:pt-[1em] text-[2.5em] font-bold ">o sklepie</h1>
       <div class="medium:grid medium:grid-cols-2 medium::grid-rows-1 wrapper">
         <div class="flex items-center">
-          <p class="text-2xl px-6 medium:text-xl medium:px-4">EveCandle to sklep oferujący różnorodne, ręcznie robione
-            świece
-            na
-            zamówienie.
-            Nasza
-            oferta
-            obejmuje unikalne
-            wzory i style, które można dostosować do indywidualnych preferencji klienta. Dzięki naszym wysokiej jakości
-            produktom i starannemu wykonaniu, każda świeca stworzona w EveCandle jest wyjątkowa i pełna charakteru.
-            Zapraszamy do odkrywania naszej kolekcji, aby znaleźć idealną świecę dopasowaną do Twojego gustu i potrzeb.
+          <p class="text-2xl px-6 medium:text-xl medium:px-4">EveCandle to wyjątkowy sklep, który nie tylko oferuje
+            możliwość zamówienia pięknych świec ręcznie wykonanych z ekologicznych materiałów, ale również dostarcza
+            wysokiej jakości półproduktów do produkcji świec. Nasza oferta obejmuje szeroki wybór ekologicznych
+            materiałów, które mogą być wykorzystane do tworzenia własnych unikalnych świec w domowym zaciszu. Zachęcamy
+            do eksperymentowania z różnymi formami i aromatami, aby stworzyć świecę, która idealnie odzwierciedla
+            indywidualny styl i preferencje. Dołącz do naszej społeczności pasjonatów świec i odkryj radość tworzenia
+            własnych, ekologicznych światełek, które dodają uroku każdemu wnętrzu.
           </p>
         </div>
         <div class="relative">
           <img class="medium:mb-4 mx-auto" src="./src/images/about-shop-candles.png" alt="">
           <div class="medium:mr-6 absolute top-0 bottom-0 left-0 right-0"></div>
+        </div>
+      </div>
+    </section>
+    <section id="offers">
+      <div class="flex flex-col ">
+        <h1 class="uppercase text-center py-[1em] medium:pt-[1em] text-[2.5em] font-bold ">oferta</h1>
+        <p class="text-center text-xl">W sklepie EveCandle jest możliwość zamówienia świec okolicznościowych,
+          neutralnych czy
+          też
+          tealight'ów.</p>
+        <p class="text-center my-4 text-xl">A po
+          resztę naszej oferty zapraszamy do naszego</p>
+        <button><a
+            class="text-[2em] transition-all ease-in-out hover:text-[#4f6f52] hover:before:w-[100%] hover:before:h-[100%] hover:after:h-[100%] hover:after:w-[100%] uppercase cta relative mx-auto p-2"
+            href="#">sklepu</a></button>
+      </div>
+      <div class="grid grid-cols-3 grid-rows-1 wrapper py-10">
+        <div
+          class="relative before:absolute before:top-0 before:left-0 before:border-[#4f6f52] before:border-l-2 before:h-[65%] border-t-2 pt-4 border-[#4f6f52]">
+          <h2 class="uppercase text-center font-bold ">świece okolicznościowe</h2>
+          <img class="size-[10em] mx-auto" src="./src/images/cgristmas-candle.png" alt="christmas candle">
+          <p class="text-center px-6">Świece okolicznościowe mogą być ozdobione symbolicznymi motywami, napisami lub
+            zdobieniami, które nadają im wyjątkowy charakter i sprawiają, że stają się doskonałym prezentem lub
+            elementem dekoracyjnym podczas specjalnych momentów w życiu.</p>
+        </div>
+        <div class="pt-4">
+          <h2 class="uppercase text-center font-bold ">świece neutralne</h2>
+          <img class="size-[10em] mx-auto" src="./src/images/neutral-candle.png" alt="neutral candle">
+          <p class="text-center px-6">Świece neutralne doskonale komponują się z różnymi stylami dekoracyjnymi, od
+            nowoczesnego po klasyczny, co czyni je uniwersalnym wyborem dla osób poszukujących prostych, lecz
+            eleganckich elementów dekoracyjnych do swojego domu.</p>
+        </div>
+        <div
+          class="border-[#4f6f52] border-b-2 relative before:absolute before:bottom-0 before:right-0 before:h-[65%] before:border-r-2 before:border-[#4f6f52] pt-4">
+          <h2 class="uppercase text-center font-bold ">świece tealight</h2>
+          <img class="size-[10em] mx-auto" src="./src/images/tealight.png" alt="tealight candle">
+          <p class="text-center px-6">Tealighty są doskonałym dodatkiem do atmosferycznego oświetlenia w domu, tworząc
+            przyjemny, subtelny blask i wspaniałą atmosferę relaksu podczas wieczornych spotkań czy romantycznych
+            kolacji.</p>
         </div>
       </div>
     </section>

@@ -96,3 +96,29 @@
 .active-scroll {
 	color: #4f6f52;
 }
+.cta::before {
+	content: "";
+	opacity: 100;
+	width: 50%;
+	height: 50%;
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-color: #4f6f52;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transition: all 0.3s;
+}
+.cta::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	opacity: 100;
+	width: 50%;
+	height: 50%;
+	border-color: #4f6f52;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	transition: all 0.3s;
+}
