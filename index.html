@@ -37,22 +37,22 @@
       <img class="p-[1em]" src="./src/icons/shopping-cart (1).svg" alt="basket icon">
     </button>
   </nav>
-  <nav class="hidden medium:block sticky top-0 bg-white z-10">
+  <nav class="hidden medium:block sticky top-0 bg-white z-20">
     <p class="text-center font-logo text-[3em]">EveCandle</p>
     <ul class="a> uppercase a> font-bold py-[1em] [&>li]:px-2 flex justify-center top-0 text-sm">
       <li id="desktop-nav"><a
-          class="tracking-wider hover:text-[#4F6F52] transition-[color] relative px-[2em] py-[1em] link-top"
+          class="tracking-wider hover:text-[#F9DDD2] transition-[color] relative px-[2em] py-[1em] link-top"
           href="#about-shop">O
           sklepie</a></li>
       <li id="desktop-nav"><a
-          class="tracking-wider hover:text-[#4F6F52] transition-[color] relative link-top px-[2em] py-[1em]"
+          class="tracking-wider hover:text-[#F9DDD2] transition-[color] relative link-top px-[2em] py-[1em]"
           href="#offers">Oferta</a></li>
       <li id="desktop-nav"><a
-          class="tracking-wider hover:text-[#4F6F52] transition-[color] relative link-top px-[2em] py-[1em]"
+          class="tracking-wider hover:text-[#F9DDD2] transition-[color] relative link-top px-[2em] py-[1em]"
           href="">Kontakt</a>
       </li>
       <li id="desktop-nav"><a
-          class="tracking-wider hover:text-[#4F6F52] ease-in-out transition-[color] relative px-[2em] py-[1em] cta"
+          class="tracking-wider hover:text-[#F9DDD2] ease-in-out transition-[color] relative px-[2em] py-[1em] cta"
           href="">Sklep</a>
       </li>
     </ul>
@@ -63,8 +63,8 @@
         <h1 class="text-8xl font-bold py-8">EveCandle</h1>
         <p class="text-4xl ">Odkryj magię światła - świeczki na miarę Twoich marzeń!</p>
         <button
-          class="text-2xl mt-16 py-4 px-6 bg-background link-top relative text-black before:opacity-100 before:border-background before:border-t-4 before:border-l-4 before:h-[50%] before:w-[50%] before:-top-4 before:-left-4 hover:before:-top-6 hover:before:-left-6 after:opacity-100 after:border-background after:border-b-4 after:border-r-4 after:h-[50%] after:w-[50%] after:-bottom-4 after:-right-4 hover:after:-bottom-6 hover:after:-right-6">Poznaj
-          nas!</button>
+          class="text-2xl mt-16 py-4 px-6 bg-background link-top relative text-black before:opacity-100 before:border-background before:border-t-2 before:border-l-2 before:h-[50%] before:w-[50%] before:-top-4 before:-left-4 hover:before:-top-6 hover:before:-left-6 after:opacity-100 after:border-background after:border-b-2 after:border-r-2 after:h-[50%] after:w-[50%] after:-bottom-4 after:-right-4 hover:after:-bottom-6 hover:after:-right-6"><a
+            href="#about-shop">Poznaj nas!</a></button>
       </div>
       <div class="absolute top-0 right-0 left-0 bottom-0 bg-[rgba(0,0,0,0.5)]">
       </div>
@@ -91,46 +91,57 @@
           własnych, ekologicznych światełek, które dodają uroku każdemu wnętrzu.</p>
       </div>
     </section>
-    <section id="offers" class="wrapper">
-      <div class="flex flex-col ">
-        <p class="px-4 text-center text-xl">W sklepie EveCandle jest możliwość zamówienia świec okolicznościowych,
-          neutralnych czy
-          też
-          tealight'ów.</p>
-        <p class="text-center my-4 text-xl">A po
-          resztę naszej oferty zapraszamy do naszego</p>
-        <button><a
-            class="text-[2em] transition-all ease-in-out hover:text-[#4f6f52] hover:before:w-[100%] hover:before:h-[100%] hover:after:h-[100%] hover:after:w-[100%] uppercase cta relative mx-auto p-2"
-            href="#">sklepu</a></button>
+    <section id="offers" class="wrapper grid grid-cols-3 grid-rows-2 gap-6">
+      <div class="relative col-span-1 row-span-1">
+        <div class="z-50">
+          <h2 class="text-white text-2xl font-bold mt-64 ml-10">Świece okolicznościowe</h2>
+          <button class="m-10 bg-white py-2 px-4">Przejdź do sklepu</button>
+        </div>
+        <div
+          class="-z-10 bg-[url(./src/images/easter-candle.jpg)] bg-center bg-cover absolute top-0 bottom-0 right-0 left-0">
+        </div>
+        <div class="-z-10 absolute top-0 left-0 right-0 bottom-0 bg-[rgb(0,0,0,0.5)]"></div>
       </div>
-      <div class="grid xl:grid-cols-3 xl:grid-rows-1 medium:grid-cols-2 medium:grid-rows-2 wrapper py-10">
-        <div
-          class="s:shadow-xl medium:shadow-none s:py-2 relative xl:before:absolute xl:before:top-0 xl:before:left-0 xl:before:border-[#4f6f52] xl:before:border-l-2 xl:before:h-[65%] xl:border-t-2 xl:pt-4 xl:border-[#4f6f52]">
-          <h2 class="uppercase text-center font-bold ">świece okolicznościowe</h2>
-          <img class="size-[10em] mx-auto" src="./src/images/cgristmas-candle.png" alt="christmas candle">
-          <p class="text-center px-6">Świece okolicznościowe mogą być ozdobione symbolicznymi motywami, napisami lub
-            zdobieniami, które nadają im wyjątkowy charakter i sprawiają, że stają się doskonałym prezentem lub
-            elementem dekoracyjnym podczas specjalnych momentów w życiu.</p>
-        </div>
-        <div class="s:shadow-xl medium:shadow-none s:py-2 s:my-10 medium:my-0 xl:pt-4">
-          <h2 class="uppercase text-center font-bold ">świece neutralne</h2>
-          <img class="size-[10em] mx-auto" src="./src/images/neutral-candle.png" alt="neutral candle">
-          <p class="text-center px-6">Świece neutralne doskonale komponują się z różnymi stylami dekoracyjnymi, od
-            nowoczesnego po klasyczny, co czyni je uniwersalnym wyborem dla osób poszukujących prostych, lecz
-            eleganckich elementów dekoracyjnych do swojego domu.</p>
+      <div class="relative col-span-2 row-span-1">
+        <div class="z-50">
+          <h2 class="text-white text-2xl font-bold mt-64 ml-10">Świece do domu</h2>
+          <button class="m-10 bg-white py-2 px-4">Przejdź do sklepu</button>
         </div>
         <div
-          class="medium:col-span-2 xl:col-span-1 medium:pt-16 xl:border-[#4f6f52] xl:border-b-2 relative xl:before:absolute xl:before:bottom-0 xl:before:right-0 xl:before:h-[65%] xl:before:border-r-2 xl:before:border-[#4f6f52] xl:pt-4">
-          <h2 class="uppercase text-center font-bold ">świece tealight</h2>
-          <img class="size-[10em] mx-auto" src="./src/images/tealight.png" alt="tealight candle">
-          <p class="text-center px-6 medium:mx-48 xl:mx-0">Tealighty są doskonałym dodatkiem do atmosferycznego
-            oświetlenia w
-            domu, tworząc
-            przyjemny, subtelny blask i wspaniałą atmosferę relaksu podczas wieczornych spotkań czy romantycznych
-            kolacji.</p>
+          class="-z-10 bg-[url(./src/images/modern-candle.jpg)] bg-center bg-cover absolute top-0 bottom-0 right-0 left-0">
         </div>
+        <div class="-z-10 absolute top-0 left-0 right-0 bottom-0 bg-[rgb(0,0,0,0.5)]"></div>
+      </div>
+      <div class="relative col-span-2 row-span-1">
+        <div class="z-50">
+          <h2 class="text-white text-2xl font-bold mt-64 ml-10">Świece świąteczne</h2>
+          <button class="m-10 bg-white py-2 px-4">Przejdź do sklepu</button>
+        </div>
+        <div
+          class="-z-10 bg-[url(./src/images/snowman-candle.jpg)] bg-center bg-cover absolute top-0 bottom-0 right-0 left-0">
+        </div>
+        <div class="-z-10 absolute top-0 left-0 right-0 bottom-0 bg-[rgb(0,0,0,0.5)]"></div>
+      </div>
+      <div class="relative col-span-1 row-span-1">
+        <div class="z-50">
+          <h2 class="text-white text-2xl font-bold mt-64 ml-10">Świece sojowe</h2>
+          <button class="m-10 bg-white py-2 px-4">Przejdź do sklepu</button>
+        </div>
+        <div
+          class="-z-10 bg-[url(./src/images/soy-candle.jpg)] bg-center bg-cover absolute top-0 bottom-0 right-0 left-0">
+        </div>
+        <div class="-z-10 absolute top-0 left-0 right-0 bottom-0 bg-[rgb(0,0,0,0.5)]"></div>
+      </div>
+      <div class="relative col-span-3 row-span-1">
+        <div class="z-50">
+          <h2 class="text-white text-2xl font-bold mt-64 ml-10">Uchwyty na tealight'y</h2>
+          <button class="m-10 bg-white py-2 px-4">Przejdź do sklepu</button>
+        </div>
+        <div class="-z-10 bg-[url(./src/images/tealight-holders.jpg)] absolute top-0 bottom-0 right-0 left-0"></div>
+        <div class="-z-10 absolute top-0 left-0 right-0 bottom-0 bg-[rgb(0,0,0,0.5)]"></div>
       </div>
     </section>
+    <section class="h-[100vh]"></section>
   </main>
   <script src="./src/script.js"></script>
 </body>

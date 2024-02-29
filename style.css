@@ -16,11 +16,6 @@
 		background-image: url(./src/images/evecandle-heroimage.jpg);
 	}
 }
-@layer components {
-	.hero-btn {
-		@apply 
-	}
-}
 *,
 *::before,
 *::after {
@@ -36,7 +31,7 @@
 	height: 0;
 	border-top-width: 2px;
 	border-left-width: 2px;
-	border-color: #4f6f52;
+	border-color: #F9DDD2;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -50,7 +45,7 @@
 	opacity: 0;
 	width: 0;
 	height: 0;
-	border-color: #4f6f52;
+	border-color: #F9DDD2;
 	border-bottom-width: 2px;
 	border-right-width: 2px;
 	transition: all 0.3s;
@@ -76,7 +71,7 @@
 	opacity: 100;
 	width: 50%;
 	height: 50%;
-	border-color: #4f6f52;
+	border-color: #F9DDD2;
 	border-bottom-width: 2px;
 	border-right-width: 2px;
 	transition: all 0.3s;
@@ -88,7 +83,7 @@
 	height: 50%;
 	border-top-width: 2px;
 	border-left-width: 2px;
-	border-color: #4f6f52;
+	border-color: #F9DDD2;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -104,7 +99,7 @@
 	height: 50%;
 	border-top-width: 2px;
 	border-right-width: 2px;
-	border-color: #4f6f52;
+	border-color: #F9DDD2;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -118,7 +113,7 @@
 	opacity: 100;
 	width: 50%;
 	height: 50%;
-	border-color: #4f6f52;
+	border-color: #F9DDD2;
 	border-bottom-width: 2px;
 	border-left-width: 2px;
 	transition: all 0.3s;
