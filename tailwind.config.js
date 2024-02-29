@@ -10,13 +10,14 @@ module.exports = {
 		},
 		extend: {
 			colors: {
-				background: "#eeddd3",
+				background: "#F9DDD2",
 				text: "#6e78ff",
 			},
 		},
 		fontFamily: {
-			roboto: ['Roboto', 'sans-serif']
-		}
+			montserrat: ["Montserrat", "sans-serif"],
+			logo: ["Namdhinggo", "serif"],
+		},
 	},
 	plugins: [],
 };

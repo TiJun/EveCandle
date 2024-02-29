@@ -10,31 +10,36 @@
   <link rel="stylesheet" href="./src/hamburger.css">
 </head>
 
-<body class="bg-background font-roboto">
+<body class="font-montserrat">
   <div id="mobile-nav"
-    class="medium-hidden bg-[#e0c0ad] flex flex-col justify-center items-end a> uppercase a> font-bold z-10 fixed h-[100vh] overflow-hidden translate-x-[-100%] transition-[transform]">
-    <img src="./src/images/home-icon.png" class="size-[10em] mt-[5em] mx-auto" alt="">
-    <ul class="flex flex-col text-[1.2em] justify-around mr-[1em] text-center h-[100vh] mb-10">
-      <li class="w-[150%] bg-[#4f6f52] h-[2px] -translate-x-4"></li>
-      <li id="link"><a class="p-[1em]" href="#about-shop">o sklepie</a></li>
-      <li class="w-[150%] bg-[#4f6f52] h-[2px] -translate-x-4"></li>
-      <li id="link"><a class="p-[1em]" class="my-[2em]" href="">oferta</a></li>
-      <li class="w-[150%] bg-[#4f6f52] h-[2px] -translate-x-4"></li>
-      <li id="link"><a class="p-[1em]" href="">kontakt</a></li>
+    class="medium:hidden bg-background bg-cover flex flex-col justify-start items-center a> uppercase a> z-10 fixed w-[30%] h-full overflow-hidden -translate-x-[100%] transition-[transform] ease-in-out duration-500">
+    <ul
+      class="[&>li>a]:py-4 [&>li]:w-full [&>li>a]:w-[90%] [&>li>a]:block [&>li]:text-sm flex flex-col items-start text-left ml-4 mt-24 w-full h-[30%]">
+      <li><a class="mobile-nav relative link" href="#about-shop">o sklepie</a></li>
+      <li class="py-8"><a class="mobile-nav relative link" href="#offers">oferta</a></li>
+      <li><a class="mobile-nav relative link" href="">kontakt</a></li>
     </ul>
+    <div
+      class="absolute flex justify-around w-full [&>a>img]:size-5 pt-4 mb-4 bottom-0 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:border-t-2 before:border-black">
+      <a href=""><img src="./src/icons/facebook.svg" alt=""></a>
+      <a href=""><img src="./src/icons/instagram.svg" alt=""></a>
+      <a href=""><img src="./src/icons/youtube.svg" alt=""></a>
+    </div>
   </div>
-  <nav class="xl:hidden bg-background z-10 sticky top-0 flex justify-between">
+  <nav class="shadow-xl medium:hidden bg-white z-10 sticky top-0 flex justify-between items-center">
     <button id="burger" class="z-50 hamburger hamburger--emphatic" type="button">
       <span class="hamburger-box">
         <span class="hamburger-inner"></span>
       </span>
     </button>
+    <p class="text-2xl font-bold">EveCandle</p>
     <button>
       <img class="p-[1em]" src="./src/icons/shopping-cart (1).svg" alt="basket icon">
     </button>
   </nav>
-  <nav class="hidden xl:block sticky top-0 bg-background z-10">
-    <ul class="a> uppercase a> font-bold py-[1em] flex justify-evenly top-0">
+  <nav class="hidden medium:block sticky top-0 bg-white z-10">
+    <p class="text-center font-logo text-[3em]">EveCandle</p>
+    <ul class="a> uppercase a> font-bold py-[1em] [&>li]:px-2 flex justify-center top-0 text-sm">
       <li id="desktop-nav"><a
           class="tracking-wider hover:text-[#4F6F52] transition-[color] relative px-[2em] py-[1em] link-top"
           href="#about-shop">O
@@ -42,10 +47,6 @@
       <li id="desktop-nav"><a
           class="tracking-wider hover:text-[#4F6F52] transition-[color] relative link-top px-[2em] py-[1em]"
           href="#offers">Oferta</a></li>
-      <li><a class="px-[2em] py-[1em]" href="#"><img
-            class="z-10 size-[12em] absolute top-[100%] right-[50%] left-[50%] transform-image bg-background rounded-full"
-            src="./src/images/home-icon.png" alt="evecandle logo"></a>
-      </li>
       <li id="desktop-nav"><a
           class="tracking-wider hover:text-[#4F6F52] transition-[color] relative link-top px-[2em] py-[1em]"
           href="">Kontakt</a>
@@ -56,37 +57,43 @@
       </li>
     </ul>
   </nav>
-  <header class="h-[50vh]">
+  <header class="h-[75vh]">
     <div class="h-[100%] relative">
-      <div class="absolute top-0 right-0 left-0 bottom-0 bg-[rgba(205,180,219,0.35)]">
+      <div class="z-10 pb-40 absolute flex flex-col text-white justify-center h-full items-center w-full text-center ">
+        <h1 class="text-8xl font-bold py-8">EveCandle</h1>
+        <p class="text-4xl ">Odkryj magię światła - świeczki na miarę Twoich marzeń!</p>
+        <button
+          class="text-2xl mt-16 py-4 px-6 bg-background link-top relative text-black before:opacity-100 before:border-background before:border-t-4 before:border-l-4 before:h-[50%] before:w-[50%] before:-top-4 before:-left-4 hover:before:-top-6 hover:before:-left-6 after:opacity-100 after:border-background after:border-b-4 after:border-r-4 after:h-[50%] after:w-[50%] after:-bottom-4 after:-right-4 hover:after:-bottom-6 hover:after:-right-6">Poznaj
+          nas!</button>
+      </div>
+      <div class="absolute top-0 right-0 left-0 bottom-0 bg-[rgba(0,0,0,0.5)]">
       </div>
       <div class="h-[100%] bg-center bg-cover hero"></div>
     </div>
   </header>
   <main>
-    <section class="bg-[rgb(230,184,175,0.3)]" id="about-shop">
-      <h1 class="uppercase text-center py-[1em] medium:pt-[1em] text-[2.5em] font-bold ">o sklepie</h1>
-      <div class="medium:grid medium:grid-cols-2 medium::grid-rows-1 wrapper">
-        <div class="flex items-center">
-          <p class="text-2xl px-6 medium:text-xl medium:px-4">EveCandle to wyjątkowy sklep, który nie tylko oferuje
-            możliwość zamówienia pięknych świec ręcznie wykonanych z ekologicznych materiałów, ale również dostarcza
-            wysokiej jakości półproduktów do produkcji świec. Nasza oferta obejmuje szeroki wybór ekologicznych
-            materiałów, które mogą być wykorzystane do tworzenia własnych unikalnych świec w domowym zaciszu. Zachęcamy
-            do eksperymentowania z różnymi formami i aromatami, aby stworzyć świecę, która idealnie odzwierciedla
-            indywidualny styl i preferencje. Dołącz do naszej społeczności pasjonatów świec i odkryj radość tworzenia
-            własnych, ekologicznych światełek, które dodają uroku każdemu wnętrzu.
-          </p>
-        </div>
-        <div class="relative">
-          <img class="medium:mb-4 mx-auto" src="./src/images/about-shop-candles.png" alt="">
-          <div class="medium:mr-6 absolute top-0 bottom-0 left-0 right-0"></div>
-        </div>
+    <section class="wrapper py-16" id="about-shop">
+      <div>
+        <p class="px-6 mb-4 s:text-sm medium:text-base medium:px-4 text-left">EveCandle to wyjątkowy
+          sklep, który nie tylko
+          oferuje
+          możliwość zamówienia pięknych świec ręcznie wykonanych z ekologicznych materiałów, ale również dostarcza
+          wysokiej jakości półproduktów do produkcji świec.
+        </p>
+        <p class="px-6 mb-4 s:text-sm medium:text-base medium:px-4 text-left">Nasza oferta obejmuje szeroki wybór
+          ekologicznych
+          materiałów, które mogą być wykorzystane do tworzenia własnych unikalnych świec w domowym zaciszu.</p>
+        <p class="px-6 mb-4 s:text-sm medium:text-base medium:px-4 text-left">Zachęcamy
+          do eksperymentowania z różnymi formami i aromatami, aby stworzyć świecę, która idealnie odzwierciedla
+          indywidualny styl i preferencje.</p>
+        <p class="px-6 s:text-sm medium:text-base medium:px-4 text-left">Dołącz do naszej społeczności
+          pasjonatów świec i odkryj radość tworzenia
+          własnych, ekologicznych światełek, które dodają uroku każdemu wnętrzu.</p>
       </div>
     </section>
-    <section id="offers">
+    <section id="offers" class="wrapper">
       <div class="flex flex-col ">
-        <h1 class="uppercase text-center py-[1em] medium:pt-[1em] text-[2.5em] font-bold ">oferta</h1>
-        <p class="text-center text-xl">W sklepie EveCandle jest możliwość zamówienia świec okolicznościowych,
+        <p class="px-4 text-center text-xl">W sklepie EveCandle jest możliwość zamówienia świec okolicznościowych,
           neutralnych czy
           też
           tealight'ów.</p>
@@ -96,16 +103,16 @@
             class="text-[2em] transition-all ease-in-out hover:text-[#4f6f52] hover:before:w-[100%] hover:before:h-[100%] hover:after:h-[100%] hover:after:w-[100%] uppercase cta relative mx-auto p-2"
             href="#">sklepu</a></button>
       </div>
-      <div class="grid grid-cols-3 grid-rows-1 wrapper py-10">
+      <div class="grid xl:grid-cols-3 xl:grid-rows-1 medium:grid-cols-2 medium:grid-rows-2 wrapper py-10">
         <div
-          class="relative before:absolute before:top-0 before:left-0 before:border-[#4f6f52] before:border-l-2 before:h-[65%] border-t-2 pt-4 border-[#4f6f52]">
+          class="s:shadow-xl medium:shadow-none s:py-2 relative xl:before:absolute xl:before:top-0 xl:before:left-0 xl:before:border-[#4f6f52] xl:before:border-l-2 xl:before:h-[65%] xl:border-t-2 xl:pt-4 xl:border-[#4f6f52]">
           <h2 class="uppercase text-center font-bold ">świece okolicznościowe</h2>
           <img class="size-[10em] mx-auto" src="./src/images/cgristmas-candle.png" alt="christmas candle">
           <p class="text-center px-6">Świece okolicznościowe mogą być ozdobione symbolicznymi motywami, napisami lub
             zdobieniami, które nadają im wyjątkowy charakter i sprawiają, że stają się doskonałym prezentem lub
             elementem dekoracyjnym podczas specjalnych momentów w życiu.</p>
         </div>
-        <div class="pt-4">
+        <div class="s:shadow-xl medium:shadow-none s:py-2 s:my-10 medium:my-0 xl:pt-4">
           <h2 class="uppercase text-center font-bold ">świece neutralne</h2>
           <img class="size-[10em] mx-auto" src="./src/images/neutral-candle.png" alt="neutral candle">
           <p class="text-center px-6">Świece neutralne doskonale komponują się z różnymi stylami dekoracyjnymi, od
@@ -113,10 +120,12 @@
             eleganckich elementów dekoracyjnych do swojego domu.</p>
         </div>
         <div
-          class="border-[#4f6f52] border-b-2 relative before:absolute before:bottom-0 before:right-0 before:h-[65%] before:border-r-2 before:border-[#4f6f52] pt-4">
+          class="medium:col-span-2 xl:col-span-1 medium:pt-16 xl:border-[#4f6f52] xl:border-b-2 relative xl:before:absolute xl:before:bottom-0 xl:before:right-0 xl:before:h-[65%] xl:before:border-r-2 xl:before:border-[#4f6f52] xl:pt-4">
           <h2 class="uppercase text-center font-bold ">świece tealight</h2>
           <img class="size-[10em] mx-auto" src="./src/images/tealight.png" alt="tealight candle">
-          <p class="text-center px-6">Tealighty są doskonałym dodatkiem do atmosferycznego oświetlenia w domu, tworząc
+          <p class="text-center px-6 medium:mx-48 xl:mx-0">Tealighty są doskonałym dodatkiem do atmosferycznego
+            oświetlenia w
+            domu, tworząc
             przyjemny, subtelny blask i wspaniałą atmosferę relaksu podczas wieczornych spotkań czy romantycznych
             kolacji.</p>
         </div>
