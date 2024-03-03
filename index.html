@@ -6,7 +6,7 @@
   <link rel="icon" type="image/svg+xml" href="./src/images/home-icon.jpg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EveCandle - Handmade Candles</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="./src/hamburger.css">
 </head>
 
@@ -37,8 +37,8 @@
       <img class="p-[1em]" src="./src/icons/shopping-cart (1).svg" alt="basket icon">
     </button>
   </nav>
-  <nav class="hidden medium:block sticky top-0 bg-white z-20">
-    <p class="text-center font-logo text-[3em]">EveCandle</p>
+  <nav class="hidden medium:block sticky top-0 bg-white z-[100]">
+    <a href="#" class="text-center block mx-auto font-logo text-[3em]">EveCandle</a>
     <ul class="a> uppercase a> font-bold py-[1em] [&>li]:px-2 flex justify-center top-0 text-sm">
       <li id="desktop-nav"><a
           class="tracking-wider hover:text-[#F9DDD2] transition-[color] relative px-[2em] py-[1em] link-top"
@@ -64,7 +64,7 @@
         <p class="text-4xl ">Odkryj magię światła - świeczki na miarę Twoich marzeń!</p>
         <button
           class="text-2xl mt-16 py-4 px-6 bg-background link-top relative text-black before:opacity-100 before:border-background before:border-t-2 before:border-l-2 before:h-[50%] before:w-[50%] before:-top-4 before:-left-4 hover:before:-top-6 hover:before:-left-6 after:opacity-100 after:border-background after:border-b-2 after:border-r-2 after:h-[50%] after:w-[50%] after:-bottom-4 after:-right-4 hover:after:-bottom-6 hover:after:-right-6"><a
-            href="#about-shop">Poznaj nas!</a></button>
+            href="#about-shop" class="py-4 px-6">Poznaj nas!</a></button>
       </div>
       <div class="absolute top-0 right-0 left-0 bottom-0 bg-[rgba(0,0,0,0.5)]">
       </div>
@@ -92,53 +92,73 @@
       </div>
     </section>
     <section id="offers" class="wrapper grid grid-cols-3 grid-rows-2 gap-6">
-      <div class="relative col-span-1 row-span-1">
+      <div class="hover:scale-105 duration-500 transition-[transform] relative col-span-1 row-span-1">
         <div class="z-50">
           <h2 class="text-white text-2xl font-bold mt-64 ml-10">Świece okolicznościowe</h2>
-          <button class="m-10 bg-white py-2 px-4">Przejdź do sklepu</button>
+          <button class="m-10 bg-background hover:scale-125 transition-[transform] duration-500 py-2 px-4">Przejdź do
+            sklepu</button>
         </div>
         <div
           class="-z-10 bg-[url(./src/images/easter-candle.jpg)] bg-center bg-cover absolute top-0 bottom-0 right-0 left-0">
         </div>
         <div class="-z-10 absolute top-0 left-0 right-0 bottom-0 bg-[rgb(0,0,0,0.5)]"></div>
       </div>
-      <div class="relative col-span-2 row-span-1">
+      <div class="relative col-span-2 row-span-1 hover:scale-105 duration-500 transition-[transform]">
         <div class="z-50">
           <h2 class="text-white text-2xl font-bold mt-64 ml-10">Świece do domu</h2>
-          <button class="m-10 bg-white py-2 px-4">Przejdź do sklepu</button>
+          <button class="m-10 bg-background hover:scale-125 transition-[transform] duration-500 py-2 px-4">Przejdź do
+            sklepu</button>
         </div>
         <div
           class="-z-10 bg-[url(./src/images/modern-candle.jpg)] bg-center bg-cover absolute top-0 bottom-0 right-0 left-0">
         </div>
         <div class="-z-10 absolute top-0 left-0 right-0 bottom-0 bg-[rgb(0,0,0,0.5)]"></div>
       </div>
-      <div class="relative col-span-2 row-span-1">
+      <div class="relative col-span-2 row-span-1 hover:scale-105 duration-500 transition-[transform]">
         <div class="z-50">
           <h2 class="text-white text-2xl font-bold mt-64 ml-10">Świece świąteczne</h2>
-          <button class="m-10 bg-white py-2 px-4">Przejdź do sklepu</button>
+          <button class="m-10 bg-background hover:scale-125 transition-[transform] duration-500 py-2 px-4">Przejdź do
+            sklepu</button>
         </div>
         <div
           class="-z-10 bg-[url(./src/images/snowman-candle.jpg)] bg-center bg-cover absolute top-0 bottom-0 right-0 left-0">
         </div>
         <div class="-z-10 absolute top-0 left-0 right-0 bottom-0 bg-[rgb(0,0,0,0.5)]"></div>
       </div>
-      <div class="relative col-span-1 row-span-1">
+      <div class="hover:scale-105 duration-500 transition-[transform] relative col-span-1 row-span-1">
         <div class="z-50">
           <h2 class="text-white text-2xl font-bold mt-64 ml-10">Świece sojowe</h2>
-          <button class="m-10 bg-white py-2 px-4">Przejdź do sklepu</button>
+          <button class="m-10 bg-background hover:scale-125 transition-[transform] duration-500 py-2 px-4">Przejdź do
+            sklepu</button>
         </div>
         <div
           class="-z-10 bg-[url(./src/images/soy-candle.jpg)] bg-center bg-cover absolute top-0 bottom-0 right-0 left-0">
         </div>
         <div class="-z-10 absolute top-0 left-0 right-0 bottom-0 bg-[rgb(0,0,0,0.5)]"></div>
       </div>
-      <div class="relative col-span-3 row-span-1">
+      <div class="hover:scale-105 duration-500 transition-[transform] relative col-span-3 row-span-1">
         <div class="z-50">
           <h2 class="text-white text-2xl font-bold mt-64 ml-10">Uchwyty na tealight'y</h2>
-          <button class="m-10 bg-white py-2 px-4">Przejdź do sklepu</button>
+          <button class="m-10 bg-background hover:scale-125 transition-[transform] duration-500 py-2 px-4">Przejdź do
+            sklepu</button>
         </div>
         <div class="-z-10 bg-[url(./src/images/tealight-holders.jpg)] absolute top-0 bottom-0 right-0 left-0"></div>
         <div class="-z-10 absolute top-0 left-0 right-0 bottom-0 bg-[rgb(0,0,0,0.5)]"></div>
+      </div>
+    </section>
+    <section class="my-8 bg-[url(./src/images/section-image.jpg)] bg-fixed">
+      <div class="relative py-56">
+        <p
+          class="z-10 text-center mx-auto py-8 text-2xl text-white before:absolute before:top-0 before:bottom-0 before:left-0 before:right-0 before:border-t-2 before:border-b-2 before:border-white relative w-fit">
+          EveCandle: Twój osobisty płomień, ręcznie tworzony na życzenie</p>
+        <div class="absolute top-0 bottom-0 right-0 left-0 bg-[rgb(0,0,0,0.2)]"></div>
+      </div>
+    </section>
+    <section class="wrapper relative grid grid-cols-3 grid-rows-2">
+      <h2 class="row-start-1 col-start-1 col-end-1 uppercase text-2xl">najpopularniejsze</h2>
+      <div class="bg-cover bg-center bg-[url(./src/images/product-1.jpg)] row-start-1 col-start-2 ">
+        <h2 class="mt-72">Świeca Sojowa "Ciepłe Ukojenie"</h2>
+        <button><a href="">Przejdź do sklepu</a></button>
       </div>
     </section>
     <section class="h-[100vh]"></section>
