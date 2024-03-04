@@ -12,9 +12,6 @@
 	.transform-image {
 		transform: translate(-50%, -50%);
 	}
-	.hero {
-		background-image: url(./src/images/evecandle-heroimage.jpg);
-	}
 }
 *,
 *::before,
