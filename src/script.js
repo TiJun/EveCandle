@@ -12,9 +12,6 @@ const handleNav = () => {
 	}
 	burger.classList.toggle("is-active");
 };
-// const scrollSpy = () => {
-//     window.scrollY >=
-// }
 links.forEach(el => {
 	el.addEventListener("click", () => {
 		mobileNav.classList.toggle("-translate-x-[100%]");
