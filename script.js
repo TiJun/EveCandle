@@ -2,6 +2,7 @@ const burger = document.querySelector("#burger");
 const mobileNav = document.querySelector("#mobile-nav");
 const links = document.querySelectorAll(".link");
 const desktopNav = document.querySelectorAll("#desktop-nav");
+const date = document.querySelector('.year');
 const handleNav = () => {
 	if (mobileNav.classList.contains("-translate-x-[100%]")) {
 		mobileNav.classList.remove("-translate-x-[100%]");
@@ -12,6 +13,11 @@ const handleNav = () => {
 	}
 	burger.classList.toggle("is-active");
 };
+const handleDate = () => {
+	const year = new Date().getFullYear()
+	date.innerText = year
+}
+handleDate()
 links.forEach(el => {
 	el.addEventListener("click", () => {
 		mobileNav.classList.toggle("-translate-x-[100%]");
