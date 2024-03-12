@@ -8,7 +8,6 @@ const entranceAnim = () => {
 	if (window.scrollY >= 600) {
 		offersSection.classList.add("animate__animated");
 		offersSection.classList.add("animate__backInLeft");
-		console.log('działą');
 	}
 };
 const handleNav = () => {
