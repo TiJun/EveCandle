@@ -8,5 +8,6 @@ This project is a simple landing page which can be used for someone who's just s
 - Tailwind CSS 3.4.1
 - Vite 5.1.4
 - JavaScript ECMAScript 2022 (ES13)
+- animate.css 4.1.1
 ## Setup
 To check my website visit: https://eve-candle.vercel.app/
